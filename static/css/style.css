@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+label {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 120px;
+    padding: 2px;
+    float: right;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}

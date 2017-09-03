@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" title="compact" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <h1>Grade Collection Sheet</h1>
+    {% if data %}
+        <h1>Hello {{ data }}!</h1>
+    {% endif %}
+
+    <form method="post">
+        <label>Unit Academic Period (short format)</label>
+        <input type="text" name="academic_period" maxlength="5" />
+
+        <label>Unit AOS Code</label>
+        <input type="text" name="aos_code" maxlength="8" />
+
+        <label>Unit AOS Period</label>
+        <input type="text" name="aos_period" maxlength="5" />
+
+        <label>Assesment ID</label>
+        <input type="text" name="assesment_id" maxlength="2" />
+
+        <label>Hand in Date</label>
+        <input type="date" name="hand_in_date" />
+
+        <label>Feedback Date</label>
+        <input type="date" name="feedback_date" />
+
+        <label>E-mail Address</label>
+        <input type="email" name="email" />
+
+        <label>CC E-mail Address</label>
+        <input type="email" name="email_cc" />
+
+        <label>Description</label>
+        <input type="text" name="description" />
+
+        <input type="submit" value="upload" name="upload" class="submit" />
+    </form>
+</div>
+</body>
+</html>
