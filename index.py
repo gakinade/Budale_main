@@ -13,6 +13,7 @@ def index():
         # request.form['email']
         # request.form['email_cc']
         # request.form['description']
+        # request.form['Batch ID']
         return render_template('index.html', data=request.form['academic_period'])
     else:
         return render_template('index.html')
